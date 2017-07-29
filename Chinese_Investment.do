@@ -69,53 +69,9 @@ xtset year
 drop if pre_RCCP==1
 twoway (lpolyci delta_GDPpercapita year, ciplot(rline) blpattern(dash) blwidth(medium)) (scatter delta_GDPpercapita year, msymbol(i) sort),  yline(0) xtitle("Year") ytitle("Change in GDP per Capita") title("Testing for Parallel Trends: Control (1996-2003)") 
 restore
-*WHAT DO I WANT TO SEE FROM REGRESSION OUTPUT TO SHOW PARALLEL TRENDS?
-
-----------------------------------Significance Tests------------------------------------------------------------			
-
-*TESTS?
 
 
 
-----------------------------------1. Simple OLS------------------------------------------------------------	
-
-
-	
-----------------------------------2. Adding controls to OLS------------------------------------------------			
-
-----------------------------------3. DID Estimator---------------------------------------------------------		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-----------------------------------Instrumental Variables Regressions--------------------------------------------			
 preserve
 drop if year<2004 
 drop if year>2011
